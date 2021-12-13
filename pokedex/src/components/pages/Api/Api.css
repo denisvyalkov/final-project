@@ -1,0 +1,121 @@
+body {
+    background: url('./img/bg.png')
+} 
+.pokemon__card {
+    min-width: 430px;
+    min-height: 300px;
+    background-image: url('./img/unnamed.jpg');
+    border: 6px solid rgba(71, 35, 0, 0.74);
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.pokemons__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon__info {
+    min-width: 85%;
+}
+.pokemon__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;;
+}
+
+.pokemon__card button {
+    font-family: 'Fuzzy Bubbles';
+    font-size: 20px;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(71, 35, 0, 0.0); ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.pokemon__card button:hover {
+    background-color: rgba(145, 72, 0, 0.5);
+    transition: 400ms;
+}
+
+.pokemon {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center; 
+}
+
+.catch__status {
+    height: 25px;
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;;
+    font-family: 'Fuzzy Bubbles';
+    font-size: 20px;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Fuzzy Bubbles';
+    font-size: 25px;
+}
+.pokemon__name{
+    border-radius: 1 2;
+    width: 50%;
+    margin: 2px auto;
+    text-align: center;
+}
+
+.load__more{
+    padding-top: 20px; 
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Fuzzy Bubbles';
+    border: none;
+    font-size: 30px;
+    background-color: rgba(145, 72, 0, 0);
+    text-align: center;
+}
+.load__more:hover{
+    transition: 300ms;
+    background-color: rgba(145, 72, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .pokemon__card {
+        height: 350px;
+    }
+    button{
+        width: 40vw;
+    }
+    .pokemon {
+        background-position-x: center;
+    }
+    
+}
+@media (max-width: 425px) {
+    .pokemon__card {
+        min-width: 180px;
+        min-height: 350px;
+    }
+    button {
+        padding: 0;
+        margin: 0;
+        width: 80vw;
+    }
+    .pokemon__button {
+        padding: 20px 0 0 0;
+        margin: 0;
+    }
+}

@@ -1,0 +1,14 @@
+.block__faq{
+    background-image: url('../Api/img/unnamed.jpg');
+    
+    padding: 2vh 1vw;
+}
+
+@media (max-width: 425px) {
+    
+    .block__faq {
+        width: 100vw;
+        padding: 2vh 0;
+    }
+    
+}

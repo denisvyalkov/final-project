@@ -1,0 +1,91 @@
+ html, body {
+     padding: 0;
+     margin: 0;
+ }
+ header {
+     background-color: rgba(0, 0, 0, 1);
+ }
+
+ header a {
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+header a {
+    color: #ffce31;
+}
+
+ #root header {
+    display: flex;
+    padding: 0 10%;
+}
+.header__pages {
+    display: flex;
+    padding: 10px;
+}
+
+
+.header__logo {
+    height: 60px;
+    width: 180px;
+    background: url('./img/pokedex.png') 0 0/ auto 100% no-repeat;
+}
+.logo__container {
+    margin: auto 0;
+}
+
+.header__pages div {
+    line-height: 4em;
+    text-align: center;
+    margin-right: 10px;
+    padding: 0 20px;
+}
+.header__pages div:hover {
+    background-color: rgb(251, 253, 94);
+    border-radius: 25px;
+    transition: 450ms;
+}
+.header__pages div:hover a{
+    color: black;
+    transition: 450ms;
+}
+
+/* media */
+
+@media (max-width: 768px){
+    #root header {
+        padding: 0;
+    }
+    header {
+        flex-direction: column;
+    }
+    .header__logo, .header__pages {
+       margin: auto;
+    }
+    .header__pages {
+        padding: 0 0 10px 0;
+    }
+
+}
+
+@media (max-width: 425px) {
+   #root header {
+        padding: 0;
+        width: 100vw;
+    }
+
+    .header__pages {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header__pages div {
+        width: 90vw;
+        height: 50px;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+        line-height: 2.5em;
+    }
+}
